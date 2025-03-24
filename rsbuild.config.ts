@@ -19,5 +19,9 @@ export default defineConfig({
       js: '[name].js',
       css: '[name].js',
     },
+    copy: [{ from: 'public', to: '.' }],
   },
+  dev: {
+    writeToDisk: true,
+  }
 });
